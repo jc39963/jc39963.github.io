@@ -21,7 +21,7 @@ line-height: 33px;
 /* identical to box height */
 /*color: #AFAFAF;*/
   /*color: #636262*/
-  color: #88AED3
+  color: #88AED3;
 }
 .homebar{
 
@@ -63,6 +63,7 @@ border-radius: 35px;
 }
 .rectangle2 {
   position: absolute;
+  
 
   /*width: 679px;
 height: 428px;*/
@@ -78,36 +79,16 @@ box-sizing: border-box;
 border-radius: 40px;
 }
 
-.H {
 
-position: absolute;
-/*width: 67px;
-height: 108px;*/
-/*left: 40px;
-top: 18px;*/
-left: 7%;
-top: 8%;
-  font-family: 'Tienne';
-font-style: normal;
-font-weight: normal;
-/*font-size: 80px;*/
-font-size: 500%;
-
-/* identical to box height */
-
-
-color: #C0D6EB;
-
-}
 .subhead {
   position: absolute;
 /*width: 350px;
 height: 48px;*/
 /*left: 107px;
 top: 63px;*/
-left: 16%;
+left: 7.3%;
 top: 16.3%;
- font-family: 'Tienne';
+ font-family: 'Montserrat', sans-serif;
 font-style: normal;
 font-weight: normal;
 /*font-size: 36px;*/
@@ -127,7 +108,7 @@ left: 7.3%;
 top: 30%;
 
 
-font-family: Ubuntu;
+font-family: 'Montserrat', sans-serif;
 font-style: normal;
 font-weight: normal;
 /*font-size: 30px;*/

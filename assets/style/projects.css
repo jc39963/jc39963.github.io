@@ -82,6 +82,99 @@ color: #2D2C2C;
   /*margin-left: 70px;
   margin-right: 70px;*/
 }
+.hide {
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 548px;
+  height: 327.79px;
+
+
+}
+#projdesc {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 80px;
+  width: 450px;
+  height: 250px;
+}
+.hide:hover #projdesc{
+  display: block;
+  background-color: white;
+  opacity: 70%;
+  border-radius: 26px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  align-items: center;
+
+  color: #2D2C2C;
+  font-family: Ubuntu;
+
+
+}
+
+.hide2 {
+
+  position: absolute;
+  top: 0px;
+  left: 714px;
+  width: 548px;
+  height: 327.79px;
+
+
+}
+.hide2:hover #projdesc{
+  display: block;
+  background-color: black;
+  opacity: 70%;
+  border-radius: 26px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  align-items: center;
+  
+  color: white;
+  font-family: Ubuntu;
+
+
+}
+.hide3 {
+
+  position: absolute;
+  top: 0px;
+  left: 356px;
+  width: 548px;
+  height: 327.79px;
+
+
+}
+.hide3:hover #projdesc{
+  display: block;
+  background-color: white;
+  opacity: 70%;
+  border-radius: 26px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  align-items: center;
+
+  color: #2D2C2C;
+  font-family: Ubuntu;
+
+
+}
 .ux {
   position: absolute;
   top: 52%;

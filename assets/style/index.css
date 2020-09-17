@@ -1,0 +1,206 @@
+.menubar{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 15%;
+  align-items: right;
+
+}
+
+.home{
+  /*margin-left: 28px;
+  margin-right:28px;*/
+  margin-left: 5%;
+  margin-right: 5%;
+  text-decoration: none;
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 33px;
+/* identical to box height */
+/*color: #AFAFAF;*/
+  /*color: #636262*/
+  color: #88AED3
+}
+.homebar{
+
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+margin-left: 10%;
+margin-right: 5%;
+text-decoration: none;
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 33px;
+/* identical to box height */
+color: #C0D6EB;
+}
+body{
+  background: #F7F4F4;
+}
+
+
+.rectangle1 {
+ position: absolute;
+/*width: 647px;
+height: 425px;*/
+width: 55%;
+height: 60%;
+/*left: 92px;
+top: 223px;*/
+left: 6%;
+top: 18%;
+border: 5px solid #C0D6EB;
+box-sizing: border-box;
+border-radius: 35px;
+/*box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);*/
+
+}
+.rectangle2 {
+  position: absolute;
+
+  /*width: 679px;
+height: 428px;*/
+width: 55%;
+height: 60%;
+/*left: 136px;
+top: 264px;*/
+left: 9%;
+top: 26%;
+
+border: 1px solid #3E3E3E;
+box-sizing: border-box;
+border-radius: 40px;
+}
+
+.H {
+
+position: absolute;
+/*width: 67px;
+height: 108px;*/
+/*left: 40px;
+top: 18px;*/
+left: 7%;
+top: 8%;
+  font-family: 'Tienne';
+font-style: normal;
+font-weight: normal;
+/*font-size: 80px;*/
+font-size: 500%;
+
+/* identical to box height */
+
+
+color: #C0D6EB;
+
+}
+.subhead {
+  position: absolute;
+/*width: 350px;
+height: 48px;*/
+/*left: 107px;
+top: 63px;*/
+left: 16%;
+top: 16.3%;
+ font-family: 'Tienne';
+font-style: normal;
+font-weight: normal;
+/*font-size: 36px;*/
+font-size: 225%;
+/*line-height: 48px;*/
+line-height: 150%;
+
+color: #3E3E3E;
+
+}
+.blurb {
+  position: absolute;
+/*left: 43px;
+top: 117px;*/
+width: 80%;
+left: 7.3%;
+top: 30%;
+
+
+font-family: Ubuntu;
+font-style: normal;
+font-weight: normal;
+/*font-size: 30px;*/
+font-size: 187%;
+/*line-height: 50px;*/
+line-height: 156%;
+/* or 167% */
+
+display: flex;
+align-items: center;
+
+color: #3E3E3E;
+
+}
+.loader.one {
+	width: 100px;
+	height: 100px;
+}
+
+.loader.one .circle {
+
+	background: #88AED3;
+	position: absolute;
+
+	border-radius: 50%;
+	/* TODO: PART 1.2 - Add pulse animation */
+	animation-name: scalecircle;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+  /*animation-name: wave;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;*/
+
+
+}
+.first.circle {
+  top: 60%;
+  left: 75%;
+  height: 20%;
+  width: 12%;
+  opacity: 0.8;
+}
+.second.circle {
+  top: 30%;
+  left: 76%;
+  height: 15%;
+  width: 9%;
+	animation-delay: 0.25s;
+  opacity: 0.5;
+
+}
+.f.circle {
+  top: 60%;
+  left: 75%;
+  height: 20%;
+  width: 12%;
+  opacity: 0.8;
+  animation-delay: 0.5s;
+}
+.s.circle {
+  top: 30%;
+  left: 76%;
+  height: 15%;
+  width: 9%;
+	animation-delay: 0.75s;
+  opacity: 0.5;
+}
+@keyframes scalecircle {
+	from {transform: scale(0)};
+	to {transform: scale(1)};
+}
+/*@keyframes wave {
+	0% {transform: scale(0.5) translateX(0);}
+	50% {transform: translateX(-100%);}
+	100% {transform: scale(1) translateX(0);}
+}*/

@@ -1,0 +1,121 @@
+.menubar{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 15%;
+  align-items: right;
+
+}
+body{
+  background: #F7F4F4;
+}
+.home{
+  /*margin-left: 28px;
+  margin-right:28px;*/
+  margin-left: 5%;
+  margin-right: 5%;
+  text-decoration: none;
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 33px;
+/* identical to box height */
+/*color: #AFAFAF;*/
+  color: #88AED3
+}
+.homebar{
+
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+margin-left: 10%;
+margin-right: 5%;
+text-decoration: none;
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 33px;
+/* identical to box height */
+color: #C0D6EB;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+}
+.photo{
+  display: flex;
+  flex-direction: column;
+}
+.me{
+  position: absolute;
+  width: 30%;
+  height:65%;
+  left: 10%;
+  top:22%;
+  /*box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);*/
+}
+
+.resumeemail{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 89%;
+  left: 12%;
+
+}
+.resume{
+  margin-right: 30%;
+  border: 2px solid #88AED3;
+box-sizing: border-box;
+border-radius: 14px;
+padding: 5%;
+font-family: Ubuntu;
+font-style: normal;
+font-weight: 500;
+font-size: 102%;
+line-height: 100%;
+/* identical to box height, or 278% */
+text-decoration: none;
+display: flex;
+align-items: center;
+
+color: #88AED3;
+}
+.aboutme{
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  font-family: Ubuntu;
+  width: 40%;
+  height: 60%;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 30px;
+/* or 208% */
+
+
+align-items: center;
+letter-spacing: 0.02em;
+
+color:#3E3E3E;
+}
+.par{
+  padding-top: 5%;
+}
+#ABOUT{
+font-family: UBUNTU;
+font-style: normal;
+font-weight: bold;
+font-size: 225%;
+line-height: 150%;
+display: flex;
+align-items: center;
+/*text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);*/
+
+color: #88AED3;
+
+}

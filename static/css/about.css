@@ -78,7 +78,7 @@ details .text:first-of-type {
   margin: 0;
 }
 
-#experience .text-header a,
+#hobbies .text-header a,
 #volunteering .text-header a {
   color: var(--shade-300);
   text-decoration: none;

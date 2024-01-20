@@ -16,6 +16,7 @@ html {
   flex: 1 1 200px;
 }
 
+
 .intro-image img {
   width: 100%;
   background-color: var(--grey-color);

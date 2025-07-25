@@ -1,49 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <style>
-    .book-card {
-      width: 160px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin: 20px;
-      font-family: Inter, sans-serif;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a324c">
+  <title>Jenny Chen – Book Thoughts</title>
+  <link rel="stylesheet" href="static/css/main.css" />
+  <link rel="stylesheet" href="static/css/page.css" />
+  <link rel="stylesheet" href="static/css/articles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-    .book-card img {
-      width: 100%;
-      display: block;
-    }
-
-    .book-meta {
-      padding: 10px;
-      background: white;
-    }
-
-    .book-meta h3 {
-      font-size: 1rem;
-      margin: 0;
-      color: #1a324c;
-    }
-
-    .book-meta p {
-      font-size: 0.85rem;
-      margin-top: 4px;
-      color: #555;
-    }
-  </style>
+  
 </head>
+
 <body>
-  <div class="book-card">
-    <a href="https://www.goodreads.com/book/show/35133922-educated" target="_blank">
-      <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1506026635l/35133922._SY75_.jpg" />
-    </a>
-    <div class="book-meta">
-      <h3>Educated</h3>
-      <p>Raw, painful, empowering. Read in one sitting.</p>
+  <nav class="visible">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Jenny Chen</a>
+      <div class="nav-links">
+        <a href="about.html" class="link">about</a>
+        <a href="projects.html" class="link">projects</a>
+        <a href="recipes.html" class="link">recipes</a>
+        <a href="thoughts.html" class="link active">thoughts</a>
+      </div>
+      <div class="nav-controls">
+        <button id="menu-display" title="Show Menu" class="hamburger"></button>
+        <button id="theme-display" class="control">
+          <i class="demo-icon icon-cog" title="Theme Select"></i>
+        </button>
+      </div>
     </div>
+  </nav>
+
+  <main>
+    <section class="container inner-container">
+        <h2 class="section-title">Recent Films From My Letterboxd</h2>
+        <div id="letterboxd-feed" class="movie-grid"></div>
+    </section>
+
+         
+
+  </main>
+
+  <div class="page-nav container">
+    <a href="thoughts.html">&#8592; Back to Thoughts</a>
   </div>
+
+  <footer>
+    <div class="container">
+      <div class="social-media">
+        <a href="https://www.github.com/jc39963" title="Github"><i class="demo-icon icon-github-circled"></i></a>
+        <a href="https://www.linkedin.com/in/jc39963" title="LinkedIn"><i class="demo-icon icon-linkedin"></i></a>
+      </div>
+      
+    </div>
+  </footer>
+
+  <script src="static/js/index.js"></script>
+  <script>
+  fetch("https://api.rss2json.com/v1/api.json?rss_url=https://letterboxd.com/jchen63/rss/")
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById("letterboxd-feed");
+
+      data.items.slice(0, 6).forEach(item => {
+        // Attempt to extract poster from content (not guaranteed)
+        const match = item.description.match(/<img src="(.*?)"/);
+        const imageUrl = match ? match[1] : "static/images/movies/default.jpg";
+
+        const card = document.createElement("div");
+        card.classList.add("movie-card");
+        card.innerHTML = `
+          <a href="${item.link}" target="_blank" rel="noopener">
+            <img src="${imageUrl}" alt="${item.title}">
+            <div class="movie-meta">
+              <h3>${item.title}</h3>
+              <p>${new Date(item.pubDate).toLocaleDateString()}</p>
+            </div>
+          </a>
+        `;
+        container.appendChild(card);
+      });
+    })
+    .catch(err => {
+      console.error("Failed to fetch Letterboxd feed:", err);
+    });
+</script>
+
 </body>
 </html>

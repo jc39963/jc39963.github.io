@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a324c">
+  <title>Jenny Chen – Book Thoughts</title>
+  <link rel="stylesheet" href="static/css/main.css" />
+  <link rel="stylesheet" href="static/css/page.css" />
+  <link rel="stylesheet" href="static/css/articles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 24px;
+      padding-top: 1rem;
+    }
+
+    .book-card {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      background: var(--background, white);
+      transition: transform 0.2s ease;
+      text-align: center;
+    }
+
+    .book-card a {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+      height: 100%;
+    }
+
+    .book-card img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    .book-meta {
+      padding: 0.5rem;
+      font-size: 0.95rem;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .book-meta h3 {
+      margin: 0.3rem 0 0.2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-color, #1a324c);
+    }
+
+    .book-meta p {
+      font-size: 0.85rem;
+      color: var(--text-muted, #666);
+    }
+
+    .book-card:hover {
+      transform: translateY(-4px);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="visible">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Jenny Chen</a>
+      <div class="nav-links">
+        <a href="about.html" class="link">about</a>
+        <a href="projects.html" class="link">projects</a>
+        <a href="recipes.html" class="link">recipes</a>
+        <a href="thoughts.html" class="link active">thoughts</a>
+      </div>
+      <div class="nav-controls">
+        <button id="menu-display" title="Show Menu" class="hamburger"></button>
+        <button id="theme-display" class="control">
+          <i class="demo-icon icon-cog" title="Theme Select"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="container inner-container">
+      <h1 class="section-title">Book Thoughts</h1>
+
+      <p class="section-subtitle">Newer Reads</p>
+
+      <div class="book-grid">
+
+        <!-- Book 1 -->
+        <div class="book-card">
+          <a href="https://www.goodreads.com/book/show/58416952-the-will-of-the-many?from_search=true&from_srp=true&qid=NGhBeoU2wu&rank=1" target="_blank">
+            <img src="static/images/books/will.png" alt="Will of the Many cover">
+          </a>
+          <div class="book-meta">
+            <h3>The Will of the Many</h3>
+            <p>Just one of my favorites in recent years. So well written and great world building / political systems to think about.</p>
+          </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-card">
+          <a href="https://www.goodreads.com/book/show/60657589-emily-wilde-s-encyclopaedia-of-faeries" target="_blank">
+            <img src="static/images/books/EmilyWilde.jpg" alt="Emily Wilde cover">
+          </a>
+            <div class="book-meta">
+              <h3>Emily Wilde's Encyclopaedia of Faeries</h3>
+              <p>I just love the tone and Emily's vibe. Such a creative and unique book and take on fantasy stuff. </p>
+            </div>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book-card">
+          <a href="https://www.goodreads.com/book/show/45047384-the-house-in-the-cerulean-sea" target="_blank">
+            <img src="static/images/books/house.jpg" alt="House in the Cerulean Sea Cover">
+            </a>
+            <div class="book-meta">
+              <h3>The House in the Cerulean Sea</h3>
+              <p>Heartwarming and just like a book giving you a nice hug. </p>
+            </div>
+        </div>
+
+        <!-- Book 4 -->
+        <div class="book-card">
+          <a href="https://www.goodreads.com/book/show/15839976-red-rising" target="_blank">
+            <img src="static/images/books/RedRising.jpg" alt="Red Rising Cover">
+            </a>
+            <div class="book-meta">
+              <h3>Red Rising</h3>
+              <p>Will of the Many vibes (though this came first). Wonderful and complex world / political system building. </p>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+    <section class="container inner-container">
+      <p class="section-subtitle">From my Goodreads, the GOATS.</p>
+
+      <div class="book-grid">
+
+        <!-- Book 1 -->
+        <div class="book-card">
+          <a href="https://www.goodreads.com/book/show/35133922-educated" target="_blank">
+            <img src="static/images/books/educated.jpg" alt="Educated cover">
+          </a>
+          <div class="book-meta">
+            <h3>Educated</h3>
+            <p>Eye opening and one of the few memoirs I could get through.</p>
+          </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-card">
+          <a href="https://www.goodreads.com/book/show/20820994-i-ll-give-you-the-sun" target="_blank">
+            <img src="static/images/books/igyts.jpg" alt="I'll Give You the Sun cover">
+          </a>
+            <div class="book-meta">
+              <h3>I’ll Give You the Sun</h3>
+              <p>One of my favorites from middle school. </p>
+            </div>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book-card">
+          <a href="https://www.goodreads.com/book/show/6443349-percy-jackson-and-the-olympians-boxed-set?from_search=true&from_srp=true&qid=N00w8KoRtg&rank=16" target="_blank">
+            <img src="static/images/books/pjo.jpg" alt="Percy Jackson Series">
+            </a>
+            <div class="book-meta">
+              <h3>Percy Jackson and the Olympians (but Titan's Curse has a special place in my heart)</h3>
+              <p>Literally reread too many times. Everytime I read my mom's like "what are you reading? Percy Jackson again?" </p>
+            </div>
+        </div>
+        <!-- Book 4 -->
+        <div class="book-card">
+          <a href="https://www.goodreads.com/book/show/20342617-just-mercy" target="_blank">
+            <img src="static/images/books/justmercy.jpg" alt="Just Mercy Cover">
+            </a>
+            <div class="book-meta">
+              <h3>Just Mercy</h3>
+              <p>Makes you angry. Makes you want to do something. Necessary. </p>
+            </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div class="page-nav container">
+    <a href="thoughts.html">&#8592; Back to Thoughts</a>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="social-media">
+        <a href="https://www.github.com/jc39963" title="Github"><i class="demo-icon icon-github-circled"></i></a>
+        <a href="https://www.linkedin.com/in/jc39963" title="LinkedIn"><i class="demo-icon icon-linkedin"></i></a>
+      </div>
+      
+    </div>
+  </footer>
+
+  <script src="static/js/index.js"></script>
+</body>
+</html>
